@@ -1,0 +1,23 @@
+@import '../../../assets/scss/variables';
+
+
+
+.review {
+    @include scrollbar;
+    &-container {
+        max-height: 225px;
+        overflow-y: scroll;
+    }
+    &-star {
+        
+        span {
+            color: $gray;
+            font-size: map-get($font-size , 'lg' );
+            margin-right: 3px;
+
+            &.checked {
+                color: $yellow;
+            }
+        }
+    }
+}

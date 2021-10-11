@@ -1,0 +1,27 @@
+@import '../../../assets/scss/variables';
+
+.payment {
+    &-form {
+        label {
+            font-weight: 500;
+            font-size: map-get($font-size , 'sm');
+            margin-bottom: 0;
+        }
+        input, select {
+            border: none;
+            border-bottom:1px solid $gray;
+            border-radius: 0;
+            padding: 0;
+            &:focus {
+                box-shadow: none;
+                outline: none;
+            }
+        }
+    }
+    &-btn {
+        background: $pink;
+        color: $white;
+        border-radius: 20px;
+        padding: 10px 60px;
+    }
+}

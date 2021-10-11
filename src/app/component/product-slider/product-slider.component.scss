@@ -1,0 +1,27 @@
+@import '../../../assets/scss/variables';
+
+.carousel {
+    border: 1.5px solid $pink;
+    &-control {
+        &-prev , &-next {
+            height: 35px;
+            top: 50%;
+            width: 35px;
+            background: $light-grey;
+            opacity: 1;
+            border-radius: 50%;
+        }
+        &-prev {
+            transform: translate(-50%, -50%);
+            &-icon {
+                background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23d31851' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E");
+            }
+        }
+        &-next {
+            transform: translate(50%, -50%); 
+            &-icon {
+                background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23d31851' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E") !important;
+            }
+        }
+    }
+}
